@@ -1,6 +1,58 @@
+.carousel{
+  margin-top: 1em;
+}
+
+::ng-deep .p-carousel-items-container {
+  padding: 1em 0;
+}
+
+.carousel__card{
+  margin-left: 1em;
+}
+
+.carousel__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0 0 0;
+}
+
 .carousel__img{
-  height: 40vh;
-  img{
-    height: 110%;
-  }
+    height: 30vh !important;
+    width: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+}
+
+.carousel__img:hover{
+  cursor: pointer;
+}
+
+.carousel__title{
+  font-family: var(--font-nunito);
+  font-weight: 400;
+}
+
+.carousel__title:hover{
+  color: var(--blue-600);
+  cursor: pointer;
+}
+
+.carousel__subtitle{
+  font-family: var(--font-nunito);
+}
+
+.carousel__content{
+  font-family: var(--font-nunito);
+}
+
+.carousel__footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.carousel__footer-button{
+  width: 100%;
+  border-radius: 50px 0px 50px 0;
 }

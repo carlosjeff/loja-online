@@ -8,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   produtos: string[] = ['','','','','','','','']
-
+  page:number = 0
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

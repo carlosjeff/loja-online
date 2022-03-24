@@ -1,6 +1,8 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;900&family=Raleway:wght@100&display=swap";
 
 :root{
-  font-family: 'Nunito Sans', sans-serif;
+  --font-nunito:'Nunito Sans', sans-serif;
+  font-family: var(--font-nunito) ;
 }
 
 body{
