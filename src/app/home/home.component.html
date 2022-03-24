@@ -1,17 +1,30 @@
+<app-slide></app-slide>
+
+
+<div class="subtitle">
+  <h2 class="subtitle_text">Destaques</h2>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-plus"
+    iconPos="right"
+    label="Ver Mais"
+    class="p-button-text subtitle__button"
+  ></button>
+</div>
 <div class="carousel">
   <p-carousel
     [value]="produtos"
     [page]="0"
-    [numVisible]="4"
+    [numVisible]="5"
     [numScroll]="1"
     [circular]="true"
     [autoplayInterval]="3000"
   >
-    <ng-template let-product pTemplate="item" >
+    <ng-template let-product pTemplate="item">
       <div class="carousel__card">
-
-        <p-card [style]="{ width: '350px' }" styleClass="p-card-shadow">
-
+        <p-card [style]="{ width: '300px' }" styleClass="p-card-shadow">
           <ng-template pTemplate="header">
             <div class="carousel__header">
               <img alt="Card" class="carousel__img" src="/assets/teste.jpg" />
@@ -41,13 +54,36 @@
               ></button>
             </div>
           </ng-template>
-
         </p-card>
-
       </div>
-
     </ng-template>
-
   </p-carousel>
-
 </div>
+
+<div class="subtitle">
+  <h2 class="subtitle_text">Gêneros</h2>
+</div>
+
+<div class="genres">
+  <div class="carousel">
+    <p-carousel
+      [value]="produtos"
+      [page]="0"
+      [numVisible]="5"
+      [numScroll]="1"
+    >
+      <ng-template let-product pTemplate="item">
+              <div class="carousel__footer">
+                <button
+                  pButton
+                  pRipple
+                  type="button"
+                  class="carousel__footer-button"
+                  label="Romance"
+                ></button>
+              </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</div>
+

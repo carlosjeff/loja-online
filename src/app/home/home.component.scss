@@ -1,6 +1,6 @@
-.carousel{
-  margin-top: 1em;
-}
+// .carousel{
+//   margin-top: 1em;
+// }
 
 ::ng-deep .p-carousel-items-container {
   padding: 1em 0;
@@ -18,7 +18,7 @@
 }
 
 .carousel__img{
-    height: 30vh !important;
+    height: 25vh !important;
     width: auto;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
 }
@@ -55,4 +55,26 @@
 .carousel__footer-button{
   width: 100%;
   border-radius: 50px 0px 50px 0;
+}
+
+
+.subtitle{
+  margin-top: 1em;
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle_text{
+  font-weight: 100;
+  font-size: 2.3rem;
+  color: var(--blue-500);
+  //padding: 1em 0 0 1em;
+}
+
+.subtitle__button{
+  height: 3em;
+  border-radius: 50px 0px 50px 0;
+
 }

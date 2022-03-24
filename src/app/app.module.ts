@@ -7,6 +7,7 @@ import { HomeModule } from './home/home.module';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { HeaderModule } from './shared/header/header.module';
+import { FooterModule } from './shared/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderModule } from './shared/header/header.module';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    HeaderModule
+    HeaderModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

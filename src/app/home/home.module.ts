@@ -4,10 +4,12 @@ import { HomeComponent } from './home.component';
 import {CarouselModule} from 'primeng/carousel';
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
+import { SlideComponent } from './slide/slide.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
+    SlideComponent,
 
   ],
   imports: [
