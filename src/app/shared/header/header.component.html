@@ -7,12 +7,12 @@
   <nav class="header__nav">
     <ul class="header__nav__list">
       <li class="list__item">
-        <a class="list__item-action">
+        <a class="list__item-action" routerLink="/home">
           Home
         </a>
       </li>
       <li class="list__item">
-        <a class="list__item-action">
+        <a class="list__item-action" routerLink="/titulos">
           Titulos
         </a>
       </li>
@@ -23,4 +23,10 @@
       </li>
     </ul>
   </nav>
+  <div class="header__filter">
+    <div class="p-inputgroup">
+      <input type="text" pInputText placeholder="Pesquisar">
+      <button type="button" pButton pRipple icon="pi pi-search" styleClass="p-button-warn"></button>
+  </div>
+  </div>
 </div>

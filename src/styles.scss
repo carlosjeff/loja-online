@@ -9,6 +9,16 @@ body{
   background-color: var(--gray-200);
 }
 
+input{
+  border: 1px solid var(--gray-300) !important;
+  width: 100% !important;
+}
+
+input:focus-visible{
+  border: 1px solid var(--gray-600) !important;
+  outline: 0;
+}
+
 .container{
   margin: 0 5em;
 }

@@ -1,0 +1,76 @@
+<div class="conteiner">
+  <div class="filterList">
+    <p-accordion [multiple]="true">
+      <p-accordionTab header="Categoria">
+        <p-listbox
+          [options]="categorys"
+          optionLabel="desc"
+          [multiple]="true"
+          [filter]="true"
+          [checkbox]="true"
+          [style]="{ width: '100%' }"
+          [listStyle]="{ 'max-height': '250px' }"
+        ></p-listbox>
+      </p-accordionTab>
+      <p-accordionTab header="Gêneros">
+        <p-listbox
+          [options]="genres"
+          optionLabel="desc"
+          [multiple]="true"
+          [filter]="true"
+          [checkbox]="true"
+          [style]="{ width: '100%' }"
+          [listStyle]="{ 'max-height': '250px' }"
+        ></p-listbox>
+      </p-accordionTab>
+    </p-accordion>
+  </div>
+  <div class="list">
+    <div class="list__header">
+      <p>40 Itens</p>
+      <p-dropdown
+        [options]="sortItens"
+        placeholder="Select a City"
+        optionLabel="desc"
+        [showClear]="true"
+      ></p-dropdown>
+    </div>
+    <div class="list__main">
+      <p-card [style]="{ width: '300px' }" styleClass="p-card-shadow" class="list__main__item" *ngFor="let item of card" >
+        <ng-template pTemplate="header">
+          <div class="list__main__header">
+            <img alt="Card" class="list__main__img" src="/assets/heroi.jpeg" />
+          </div>
+        </ng-template>
+
+        <ng-template pTemplate="title">
+          <h2 class="list__main__title">O Herói de Mil Faces</h2>
+        </ng-template>
+
+        <ng-template pTemplate="subtitle">
+          <p class="list__main__subtitle">Joseph Campbell</p>
+        </ng-template>
+
+        <ng-template pTemplate="content">
+          <h3 class="list__main__price">R$ 31,22</h3>
+          <p class="list__main__subtitle">Em até 4x de R$ 31,22 sem juros</p>
+        </ng-template>
+
+        <ng-template pTemplate="footer">
+          <div class="list__main__footer">
+            <button
+              pButton
+              pRipple
+              type="button"
+              class="list__main__footer-button"
+              label="Saiba Mais"
+            ></button>
+          </div>
+        </ng-template>
+      </p-card>
+    </div>
+    <div class="list__footer">
+      <p-paginator [rows]="10" [totalRecords]="120" [rowsPerPageOptions]="[10,20,30]"></p-paginator>
+    </div>
+  </div>
+</div>
