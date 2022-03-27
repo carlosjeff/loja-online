@@ -1,3 +1,4 @@
+import { TitleComponent } from './products/title/title.component';
 import { ListComponent } from './products/list/list.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:'titulos',
     component: ListComponent
+  },
+  {
+    path:'titulo',
+    component: TitleComponent
   }
 ];
 

@@ -10,11 +10,15 @@ import { CardModule } from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 import {AccordionModule} from 'primeng/accordion';
 import {PaginatorModule} from 'primeng/paginator';
+import { TitleComponent } from './title/title.component';
+import {ImageModule} from 'primeng/image';
+import {DividerModule} from 'primeng/divider';
 
 @NgModule({
   declarations: [
     ListComponent,
-    ProductsComponent
+    ProductsComponent,
+    TitleComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +29,9 @@ import {PaginatorModule} from 'primeng/paginator';
     CardModule,
     ButtonModule,
     AccordionModule,
-    PaginatorModule
+    PaginatorModule,
+    ImageModule,
+    DividerModule
   ]
 })
 export class ProductsModule { }

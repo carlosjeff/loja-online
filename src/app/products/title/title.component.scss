@@ -1,0 +1,55 @@
+.title{
+  display: flex;
+  margin: 1em 10em;
+  justify-content: space-between;
+ // background-color: white;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  padding: 1em;
+}
+
+.title__capa{
+
+}
+
+.title__capa__img{
+    width: 15em;
+}
+
+
+.content{
+
+  width: 25%;
+  padding: 1em;
+}
+
+.content__title{
+  font-size: 2rem;
+  font-weight: 100;
+
+}
+
+.content__subtitle{
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  margin-bottom: 2em;
+}
+
+.content__price{
+  font-size: 1.8rem;
+  font-weight: 400;
+
+}
+
+.content__buy{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.buy__button{
+  width: 100%;
+  border-radius: 50px 0px 50px 0;
+}
