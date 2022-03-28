@@ -1,22 +1,73 @@
 <div class="title">
   <div class="title__capa">
-    <img alt="Card" class="title__capa__img" src="/assets/heroi.jpeg" />
+    <div class="title__capa__options">
+      <img alt="Card" class="title__capa__img" src="/assets/heroi.jpeg" />
+      <img alt="Card" class="title__capa__img" src="/assets/heroi.jpeg" />
+      <img alt="Card" class="title__capa__img" src="/assets/heroi.jpeg" />
+    </div>
+    <div class="title__capa__img">
+      <img alt="Card"  src="/assets/heroi.jpeg" />
+    </div>
   </div>
   <div class="content">
     <h2 class="content__title">O Herói de Mil Faces</h2>
     <p class="content__subtitle">Autor: Joseph Campbell</p>
     <h3 class="content__price">R$ 31,22</h3>
     <p class="content__subtitle">Em até 4x de R$ 31,22 sem juros</p>
+    <a href="#" class="content__link-options">Ver Mais Formas de Pagamento</a>
+    <p class="content__delivery">
+      <i class="pi pi-car"></i>
+      Chegará entre os dias 11 e 14 abr. por R$ 47,52
+    </p>
+    <a href="#" class="content__link-options">Ver Mais Formas de Entregas</a>
+
+    <p-divider></p-divider>
+    <div class="content__qtd">
+      <p class="content__subtitle">Quatidade Disponivel: <b>15</b></p>
+      <div class="p-inputgroup">
+        <button
+          type="button"
+          pButton
+          pRipple
+          icon="pi pi-angle-down"
+          styleClass="p-button-warn"
+        ></button>
+        <input
+          type="number"
+          class="content__qtd__input"
+          pInputText
+          [value]="1"
+        />
+        <button
+          type="button"
+          pButton
+          pRipple
+          icon="pi pi-angle-up"
+          styleClass="p-button-warn"
+        ></button>
+      </div>
+    </div>
+
     <p-divider></p-divider>
     <div class="content__buy">
       <button
-      pButton
-      pRipple
-      type="button"
-      icon="pi pi-shopping-bag"
-      class="buy__button"
-      label="Comprar"
-    ></button>
+        pButton
+        pRipple
+        type="button"
+        icon="pi pi-shopping-bag"
+        class="buy__button"
+        label="Comprar"
+      ></button>
+    </div>
+    <div class="content__cart">
+      <button
+        pButton
+        pRipple
+        type="button"
+        icon="pi pi-shopping-cart"
+        class="buy__button"
+        label="Adivionar ao Carrinho"
+      ></button>
     </div>
   </div>
 </div>

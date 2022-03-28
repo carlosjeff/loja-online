@@ -13,6 +13,8 @@ import {PaginatorModule} from 'primeng/paginator';
 import { TitleComponent } from './title/title.component';
 import {ImageModule} from 'primeng/image';
 import {DividerModule} from 'primeng/divider';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import {DividerModule} from 'primeng/divider';
     AccordionModule,
     PaginatorModule,
     ImageModule,
-    DividerModule
+    DividerModule,
+    BrowserModule,
+    HttpClientModule
   ]
 })
 export class ProductsModule { }
