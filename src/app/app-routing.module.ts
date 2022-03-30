@@ -1,3 +1,4 @@
+import { ContatoComponent } from './contato/contato.component';
 import { TitleComponent } from './products/title/title.component';
 import { ListComponent } from './products/list/list.component';
 import { HomeComponent } from './home/home.component';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:'titulo',
     component: TitleComponent
+  },
+  {
+    path:'contato',
+    component: ContatoComponent
   }
 ];
 

@@ -1,16 +1,21 @@
-.title{
-  display: flex;
-  margin: 1em 10em;
-  justify-content: space-between;
- // background-color: white;
+.conteiner{
   background-color: white;
   border-radius: 6px;
   box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
   padding: 1em;
+  margin: 1em 10em;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+ // background-color: white;
+
 }
 
 .title__capa__options{
   width: 10%;
+  max-height: 588px;
 
   img{
     width: 80%;
@@ -18,7 +23,6 @@
   }
 
 }
-
 
 .title__capa{
   display: flex;
@@ -100,4 +104,36 @@ margin-top: 2em;
 .buy__button{
   width: 100%;
   border-radius: 50px 0px 50px 0;
+}
+
+.description__title{
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.description__text{
+  padding: 0 1em;
+  font-size: 1rem;
+  color: var(--gray-700);
+  text-align: justify;
+}
+
+.Characteristics__table{
+  width: 100%;
+  color: var(--gray-700);
+  border-collapse: collapse;
+  padding: 0 1em;
+
+  td{
+    padding: 0.85rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+
+  td:first-child{
+    color: black;
+    font-weight: 600;
+  }
+
 }

@@ -10,6 +10,7 @@ import { HeaderModule } from './shared/header/header.module';
 import { FooterModule } from './shared/footer/footer.module';
 import { ProductsComponent } from './products/products.component';
 import { ProductsModule } from './products/products.module';
+import { ContatoModule } from './contato/contato.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ProductsModule } from './products/products.module';
     HeaderModule,
     FooterModule,
     ProductsModule,
+    ContatoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
