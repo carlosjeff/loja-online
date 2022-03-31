@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  products: {name: string}[] = [
+    {name: 'teste'}
+  ];
+
+
   constructor() { }
 
   ngOnInit(): void {
+    this.products.length
   }
 
 }

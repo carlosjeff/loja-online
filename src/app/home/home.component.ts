@@ -18,9 +18,9 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    	this.ds.cep().subscribe(data => {
-        console.log('teste',data)
-      })
+    	// this.ds.cep().subscribe(data => {
+      //   console.log('teste',data)
+      // })
   }
 
 
