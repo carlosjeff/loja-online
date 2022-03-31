@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContatoComponent implements OnInit {
 
+
+  subjects: string[] = [
+    'Sujestão',
+    'contato',
+    'outros'
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

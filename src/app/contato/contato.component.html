@@ -1,1 +1,44 @@
-<p>contato works!</p>
+<div class="container">
+  <div class="info">
+    <div class="info__logo">
+      <img class="info__logo__img" src="/assets/icon.png" alt="Web Livros" />
+      <h1 class="info__logo_text">Loja Online</h1>
+    </div>
+  </div>
+  <div class="form">
+    <h2 class="form__title">Envie-nos uma mensagem!</h2>
+    <form>
+      <div class="grid">
+        <div class="col-12">
+          <input type="text" class="input" placeholder="Nome Completo" />
+        </div>
+
+        <div class="col-12">
+          <input type="email" class="input" placeholder="Email" />
+        </div>
+
+        <div class="col-12">
+          <input type="text" class="input" placeholder="Telefone" />
+        </div>
+
+        <div class="col-12">
+          <p-dropdown
+            [options]="subjects"
+            placeholder="Assunto"
+            optionLabel="name"
+            [showClear]="true"
+          ></p-dropdown>
+        </div>
+
+        <div class="col-12">
+         <textarea rows="5" class="input" cols="30"  placeholder="Messagem"></textarea>
+        </div>
+
+        <div class="col-12">
+          <p-button icon="pi pi-envelope" label="Enviar Messagem"></p-button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>

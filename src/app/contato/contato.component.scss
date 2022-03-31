@@ -1,0 +1,40 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 10em;
+  height: 100%;
+  box-sizing: content-box;
+}
+
+.form{
+  width: 50%;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  padding: 1em;
+  margin: 0 10em;
+}
+
+.form__title{
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.info__logo{
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.info__logo__img{
+  height: 100%;
+}
+
+.info__logo_text{
+  margin-left: 0.5em;
+  font-weight: 100;
+  font-size: 2rem;
+  color: var(--blue-600);
+}
