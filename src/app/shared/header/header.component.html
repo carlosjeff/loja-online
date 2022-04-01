@@ -43,47 +43,44 @@
     </div>
   </div>
   <div class="card">
-    <a
-    (click)="op.toggle($event)"
-     class="card__button">
-     <i class="pi pi-shopping-cart"
+    <a (mouseenter)="op.show($event)"  (mouseleave)="op.hide()" class="card__button-action">
+      <i
+        class="pi pi-shopping-cart"
         style="font-size: 1.3rem"
         pBadge
-        [value]="products.length+ ''"
+        [value]="products.length + ''"
         severity="secondary"
-        ></i>
+      ></i>
+      <span class="card__button-text"></span>
     </a>
-    <!-- <p-button
-      label=""
-      [badge]="products.length + ''"
-      icon="pi pi-shopping-cart"
-
-      class="card__button"
-    ></p-button> -->
-
-    <p-overlayPanel #op [showCloseIcon]="true" [style]="{ width: '450px' }">
+    <p-overlayPanel #op [style]="{ width: '500px' }">
       <ng-template pTemplate>
-        <p-table
-          [value]="products"
-          selectionMode="single"
-          [paginator]="true"
-          [rows]="5"
-          responsiveLayout="scroll"
-        >
-          <ng-template pTemplate="header">
-            <tr>
-              <th pSortableColumn="name">
-                Name<p-sortIcon field="name"></p-sortIcon>
-              </th>
-            </tr>
-          </ng-template>
-          <ng-template pTemplate="body" let-rowData let-product>
-            <tr [pSelectableRow]="rowData">
-              <td>{{ product.name }}</td>
-            </tr>
-          </ng-template>
-        </p-table>
+        <ul class="card__list">
+          <li class="list">
+            <div class="list__line">
+              <img alt="Card" class="card-image" src="/assets/teste.jpg" />
+            </div>
+            <div class="list__line" style="width: 100%">
+              O Herói de Mil Faces
+            </div>
+            <div class="list__line" style="width: 10em">R$ 555,55</div>
+          </li>
+        </ul>
+        <div class="card__footer">
+          <div>
+            <p class="price_total">Total: R$ 555,55</p>
+            <p class="qtd__product">
+              {{ products.length }} produtos no carrinho
+            </p>
+          </div>
+        </div>
       </ng-template>
     </p-overlayPanel>
+  </div>
+  <div class="login">
+    <a class="login__button">
+      <i class="pi pi-user"  style="font-size: 1.3rem"></i>
+        <p class="login__text">Entre Ou <br> Cadastre-se</p>
+    </a>
   </div>
 </div>

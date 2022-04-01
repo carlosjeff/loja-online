@@ -41,6 +41,10 @@ body {
   font-family: var(--font-nunito);
 }
 
+.p-button{
+  padding: 0.75rem 2em;
+}
+
 main{
   min-height: calc(100vh - 30.6vh);
 }

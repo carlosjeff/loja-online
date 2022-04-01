@@ -6,6 +6,7 @@ import {ButtonModule} from 'primeng/button';
 import {OverlayPanelModule} from 'primeng/overlaypanel';
 import {TableModule} from 'primeng/table';
 import {BadgeModule} from 'primeng/badge';
+import {InputNumberModule} from 'primeng/inputnumber';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {BadgeModule} from 'primeng/badge';
     ButtonModule,
     OverlayPanelModule,
     TableModule,
-    BadgeModule
+    BadgeModule,
+    InputNumberModule,
   ],
   exports: [
     HeaderComponent
